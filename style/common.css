@@ -1,0 +1,50 @@
+body, html {
+  margin: 0;
+  background-color: white;
+  font-family: "Charter";
+}
+
+h2, h3 {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  color: #666666;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 32px 24px 32px;
+}
+
+#burger {
+  display: none;
+}
+
+#navbar > img {
+  width: 176px;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 40%;
+}
+
+.nav-link {
+  color: #5A7397;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+@media screen and (max-width: 992px) {
+  #nav-links {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+  }
+}
